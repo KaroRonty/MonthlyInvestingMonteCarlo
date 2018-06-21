@@ -4,4 +4,4 @@ Monte Carlo analysis of two different scenarios: montlhy investment with 20% and
 
 The vertical lines represent mean returns for both volatilities, and the 30% volatility had higher returns.
 
-![Volatility](https://github.com/KaroRonty/MonthlyInvestingMonteCarlo/blob/master/volatility.PNG?raw=true)
+![Volatility](https://github.com/KaroRonty/MonthlyInvestingMonteCarlo/blob/master/volatility_flat.PNG?raw=true)
