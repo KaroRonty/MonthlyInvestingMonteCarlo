@@ -4,7 +4,7 @@ options(scipen = 10000000)
 set.seed(123)
 
 price <- 100
-tradingdays <- tradingdays
+tradingdays <- 252
 length_years <- 10
 n_simulations <- 1000
 expected_return <- 0.087
@@ -36,7 +36,7 @@ volatility <- 0.3
 for (i in 1:n_simulations) {
     for (j in 1:I(tradingdays * length_years - 1)) {
         # If month start, then invest more by monthy_reinvestment
-        x[j + 1, 1] <- (j%%22 == 0 | j == 1) * monthy_reinvestment + x[j, 1] + x[j, 1] *
+        x[j + 1, 1] <- (j %% 22 == 0 | j == 1) * monthy_reinvestment + x[j, 1] + x[j, 1] *
             (expected_return/tradingdays + sqrt(volatility/tradingdays) * qnorm(runif(1), 0, 1))
     }
     z[i, 1] <- as.numeric(tail(x, 1))
