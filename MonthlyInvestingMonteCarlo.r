@@ -7,7 +7,7 @@ set.seed(123)
 price <- 100
 tradingdays <- 252
 length_years <- 10
-n_simulations <- 10000
+n_simulations <- 1000
 expected_return <- 0.087
 monthly_reinvestment <- 100
 
